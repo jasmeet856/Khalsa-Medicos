@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Products & Medicines - Khalsa Medicos</title>
+    <meta name="description" content="Browse authentic healthcare products, first aid supplies, medical devices, wellness supplements, and personal care essentials at Khalsa Medicos." />
+    <meta property="og:title" content="Healthcare Products & Medicines - Khalsa Medicos" />
+    <meta property="og:description" content="Browse authentic healthcare products, first aid supplies, medical devices, and wellness essentials." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-item">
+          <span>📍</span>
+          <span>Khalsa Medicos • Licensed Retail Chemist & Druggist</span>
+        </div>
+        <div class="top-bar-links">
+          <div class="top-bar-item">
+            <span>🕒</span>
+            <span>Mon–Sun: 8:00 AM – 10:30 PM</span>
+          </div>
+          <div class="top-bar-item">
+            <span>📞</span>
+            <a href="tel:9888102937"><strong>Helpline: +91 98881 02937</strong></a>
+          </div>
+          <span class="top-badge">Verified Stock</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Khalsa Medicos Home">
+          <div class="logo-icon-box">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">Khalsa Medicos</span>
+            <span class="brand-subtitle">ਖ਼ਾਲਸਾ ਮੈਡੀਕੋਜ਼ • Healthcare Partner</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link active">Products</a></li>
+            <li><a href="contact.html" class="nav-link">About & Contact</a></li>
+            <li><a href="login.html" class="nav-link">Demo Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions: Cart & User -->
+        <div class="nav-actions">
+          <div class="user-nav-slot">
+            <a href="login.html" class="btn btn-secondary btn-sm" style="display: inline-flex;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span>Login</span>
+            </a>
+          </div>
+
+          <button class="cart-btn" onclick="openCartDrawer()" aria-label="View Shopping Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+            <span>Cart</span>
+            <span class="cart-count-badge">0</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-menu-toggle" onclick="toggleMobileNav(true)" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop">
+      <div class="mobile-nav-drawer">
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="logo-icon-box" style="width: 36px; height: 36px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 6v12M6 12h12"/>
+              </svg>
+            </div>
+            <span class="brand-title" style="font-size: 1.15rem;">Khalsa Medicos</span>
+          </div>
+          <button onclick="toggleMobileNav(false)" style="background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">All Products</a></li>
+          <li><a href="contact.html">About & Contact</a></li>
+          <li><a href="login.html">Demo Login</a></li>
+        </ul>
+        <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--muted);">
+          <p>📞 Phone: +91 98881 02937</p>
+          <p>⏰ Open Daily: 8 AM - 10:30 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Products Page Content -->
+    <main class="products-layout">
+      <div class="container">
+        
+        <!-- Header Banner -->
+        <div style="margin-bottom: 2rem;">
+          <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--dark);">Healthcare Products & Essentials</h1>
+          <p style="color: var(--muted); font-size: 1rem;">
+            Explore authenticated pharmaceutical formulations, diagnostic medical monitors, first aid supplies, and daily wellness items.
+          </p>
+        </div>
+
+        <!-- Mandatory Prescription Disclaimer Alert -->
+        <div class="rx-notice-banner">
+          <div class="rx-notice-content">
+            <div class="rx-notice-icon">⚠️</div>
+            <div class="rx-notice-text">
+              <h4>Prescription Medicines Notice</h4>
+              <p>Prescription drugs (Schedule H & H1) require a valid doctor prescription and are subject to registered pharmacist verification prior to dispensing or counter collection.</p>
+            </div>
+          </div>
+          <button class="btn btn-secondary btn-sm" onclick="openPrescriptionPolicyModal()" style="border-color: #d97706; color: #92400e;">View Rx Policy</button>
+        </div>
+
+        <!-- Search & Category Filters Bar -->
+        <div class="search-filter-bar">
+          <div class="search-row">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input 
+                type="text" 
+                id="productSearchInput" 
+                class="search-input" 
+                placeholder="Search products by brand, medicine name, or symptom (e.g., BP monitor, Dettol, Vitamin C)..." 
+                autocomplete="off"
+              />
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <label for="productSortSelect" style="font-size: 0.875rem; font-weight: 600; color: var(--muted);">Sort By:</label>
+              <select id="productSortSelect" class="sort-select">
+                <option value="featured">Featured / Top Picks</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category Pills -->
+          <div class="category-pills-row">
+            <span style="font-size: 0.875rem; font-weight: 600; color: var(--muted); margin-right: 0.5rem;">Categories:</span>
+            <button class="filter-pill active" data-category="all">All Products</button>
+            <button class="filter-pill" data-category="Medicines & Pain Relief">💊 Medicines & Pain Relief</button>
+            <button class="filter-pill" data-category="Prescription Medicines">⚠️ Prescription Medicines</button>
+            <button class="filter-pill" data-category="Digestive & Acidity">🍃 Digestive & Acidity</button>
+            <button class="filter-pill" data-category="Cough, Cold & Allergy">🤧 Cough, Cold & Allergy</button>
+            <button class="filter-pill" data-category="Vitamins & Supplements">⚡ Vitamins & Supplements</button>
+            <button class="filter-pill" data-category="Healthcare Devices">🩺 Healthcare Devices</button>
+            <button class="filter-pill" data-category="First Aid">🩹 First Aid</button>
+            <button class="filter-pill" data-category="Personal Care">🧴 Personal Care</button>
+          </div>
+        </div>
+
+        <!-- Result Stats -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; font-size: 0.875rem; color: var(--muted);">
+          <span id="productResultsCount">Loading products...</span>
+          <span>⚡ Fast local dispatch from Khalsa Medicos Store</span>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid" id="productsContainer">
+          <!-- Populated dynamically by js/products.js -->
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Product Detail / Quick View Modal -->
+    <div class="modal-backdrop" id="productDetailModal">
+      <div class="modal-content" style="max-width: 720px;">
+        <button class="modal-close" onclick="closeProductDetailModal()">✕</button>
+        <div id="productDetailContent"></div>
+      </div>
+    </div>
+
+    <!-- Cart Drawer Slide-Over Container -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop">
+      <div class="cart-drawer">
+        <div class="cart-drawer-header">
+          <div class="cart-drawer-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+            <span>Shopping Cart</span>
+          </div>
+          <button class="cart-close-btn" onclick="closeCartDrawer()" aria-label="Close cart">✕</button>
+        </div>
+
+        <div class="cart-items-list" id="cartDrawerItems">
+          <!-- Populated by cart.js -->
+        </div>
+
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+          <!-- Populated by cart.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Order Confirmation Modal -->
+    <div class="modal-backdrop" id="checkoutModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeCheckoutModal()">✕</button>
+        <div id="checkoutModalBody"></div>
+      </div>
+    </div>
+
+    <!-- Prescription Policy Modal -->
+    <div class="modal-backdrop" id="rxPolicyModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closePrescriptionPolicyModal()">✕</button>
+        <div style="text-align: center; margin-bottom: 1.25rem;">
+          <div style="width: 48px; height: 48px; background: #fef3c7; color: #d97706; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.5rem; font-size: 1.3rem;">
+            ⚠️
+          </div>
+          <h3 style="font-size: 1.35rem; color: var(--dark); margin-bottom: 0.25rem;">Prescription Verification Policy</h3>
+          <p style="font-size: 0.85rem; color: var(--muted);">Khalsa Medicos Patient Safety Protocol</p>
+        </div>
+        <div style="font-size: 0.9rem; color: var(--body-text); line-height: 1.6; display: flex; flex-direction: column; gap: 0.85rem;">
+          <p>
+            As a licensed retail chemist and druggist, Khalsa Medicos adheres strictly to national Drug Regulations (Schedule H and Schedule H1 drugs):
+          </p>
+          <ul style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            <li>All prescription medications require a clear, valid prescription issued by a registered medical practitioner.</li>
+            <li>Prescriptions must specify the patient name, doctor registration number, diagnosis/dose, and date.</li>
+            <li>For online reservations, you may present your prescription slip at the counter or share a copy via our WhatsApp helpline (<strong>+91 98881-02937</strong>).</li>
+            <li>No prescription medicines will be dispensed without on-duty pharmacist verification.</li>
+          </ul>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: right;">
+          <button class="btn btn-primary btn-sm" onclick="closePrescriptionPolicyModal()">Understood</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="brand-logo" style="margin-bottom: 1rem;">
+              <div class="logo-icon-box" style="width: 38px; height: 38px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 6v12M6 12h12"/>
+                </svg>
+              </div>
+              <span class="brand-title" style="color: #ffffff; font-size: 1.25rem;">Khalsa Medicos</span>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+              Your reliable neighborhood chemist and druggist. Dedicated to high standards of pharmaceutical integrity, cold-chain preservation, and community healthcare.
+            </p>
+            <div class="cloud-badge">
+              <span>☁️ Cloud Computing College Project</span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="products.html">Product Catalog</a></li>
+              <li><a href="contact.html">Store Information</a></li>
+              <li><a href="login.html">Demo Login Portal</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Product Categories</h4>
+            <ul class="footer-links">
+              <li><a href="products.html">Healthcare Devices</a></li>
+              <li><a href="products.html">First Aid & Emergency</a></li>
+              <li><a href="products.html">General Wellness & Vitamins</a></li>
+              <li><a href="products.html">Personal Care & Hygiene</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Store & Contact</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+              <strong>Khalsa Medicos (ਖ਼ਾਲਸਾ ਮੈਡੀਕੋਜ਼)</strong><br />
+              Main Market Pharmacy Complex<br />
+              Punjab, India
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+              <strong>Helpline:</strong> <a href="tel:9888102937" style="color: var(--primary-light);">+91 98881-02937</a>
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+              <strong>Hours:</strong> Mon - Sun (8:00 AM - 10:30 PM)
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Khalsa Medicos. All rights reserved. Cloud Computing Project Submission.
+          </div>
+          <div>
+            Pure Frontend Static Website (HTML5, CSS3, Vanilla JS)
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Global Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/products.js"></script>
+  </body>
+</html>

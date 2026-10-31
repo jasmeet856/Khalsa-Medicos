@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About & Contact Us - Khalsa Medicos</title>
+    <meta name="description" content="Contact Khalsa Medicos pharmacy. Store address, phone number, operating hours, pharmacist consultation, and customer inquiry form." />
+    <meta property="og:title" content="About & Contact - Khalsa Medicos" />
+    <meta property="og:description" content="Contact Khalsa Medicos pharmacy." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-item">
+          <span>📍</span>
+          <span>Khalsa Medicos • Licensed Retail Chemist & Druggist</span>
+        </div>
+        <div class="top-bar-links">
+          <div class="top-bar-item">
+            <span>🕒</span>
+            <span>Mon–Sun: 8:00 AM – 10:30 PM</span>
+          </div>
+          <div class="top-bar-item">
+            <span>📞</span>
+            <a href="tel:9888102937"><strong>Helpline: +91 98881 02937</strong></a>
+          </div>
+          <span class="top-badge">Pharmacist On-Duty</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Khalsa Medicos Home">
+          <div class="logo-icon-box">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">Khalsa Medicos</span>
+            <span class="brand-subtitle">ਖ਼ਾਲਸਾ ਮੈਡੀਕੋਜ਼ • Healthcare Partner</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products</a></li>
+            <li><a href="contact.html" class="nav-link active">About & Contact</a></li>
+            <li><a href="login.html" class="nav-link">Demo Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions: Cart & User -->
+        <div class="nav-actions">
+          <div class="user-nav-slot">
+            <a href="login.html" class="btn btn-secondary btn-sm" style="display: inline-flex;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span>Login</span>
+            </a>
+          </div>
+
+          <button class="cart-btn" onclick="openCartDrawer()" aria-label="View Shopping Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+            <span>Cart</span>
+            <span class="cart-count-badge">0</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button class="mobile-menu-toggle" onclick="toggleMobileNav(true)" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop">
+      <div class="mobile-nav-drawer">
+        <div class="mobile-drawer-header">
+          <div class="brand-logo">
+            <div class="logo-icon-box" style="width: 36px; height: 36px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 6v12M6 12h12"/>
+              </svg>
+            </div>
+            <span class="brand-title" style="font-size: 1.15rem;">Khalsa Medicos</span>
+          </div>
+          <button onclick="toggleMobileNav(false)" style="background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+        </div>
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="contact.html" class="active">About & Contact</a></li>
+          <li><a href="login.html">Demo Login</a></li>
+        </ul>
+        <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--muted);">
+          <p>📞 Phone: +91 98881 02937</p>
+          <p>⏰ Open Daily: 8 AM - 10:30 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section with Real Store Photos -->
+    <section style="padding: 4rem 0 3rem; background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+          <span class="section-tag">About Our Pharmacy</span>
+          <h1 style="font-size: 2.3rem; margin-bottom: 1rem; color: var(--dark);">Serving Healthcare with Integrity & Care</h1>
+          <p style="font-size: 1.05rem; color: var(--body-text); line-height: 1.7;">
+            <strong>Khalsa Medicos (ਖ਼ਾਲਸਾ ਮੈਡੀਕੋਜ਼)</strong> is a trusted community healthcare establishment, proud partner of <strong>Leeford Healthcare</strong>, providing verified pharmaceutical medicines, critical cold-chain medications, healthcare diagnostics, and honest advice to patients and families.
+          </p>
+        </div>
+
+        <!-- 3 Feature Photo Cards of the Real Store -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+          <div style="background: #ffffff; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <img src="/assets/aistudio/WhatsApp_Image_2026-10-30_at_6.51.15_PM_e7895910.jpeg" alt="Khalsa Medicos Storefront Banner" style="width: 100%; height: 220px; object-fit: cover;"/>
+            <div style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">Official Storefront</h3>
+              <p style="font-size: 0.85rem; color: var(--muted); margin:0;">
+                Convenient street-level counter service with direct consultation and immediate prescription dispatch.
+              </p>
+            </div>
+          </div>
+
+          <div style="background: #ffffff; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <img src="/assets/aistudio/WhatsApp_Image_2026-10-30_at_6.51.16_PM_e2e293ed.jpeg" alt="Medicine Shelves and Cold Storage Refrigerator" style="width: 100%; height: 220px; object-fit: cover;"/>
+            <div style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">Cold-Chain Storage</h3>
+              <p style="font-size: 0.85rem; color: var(--muted); margin:0;">
+                Equipped with hospital-grade refrigeration units to protect temperature-sensitive insulin, vaccines, and biologics.
+              </p>
+            </div>
+          </div>
+
+          <div style="background: #ffffff; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <img src="/assets/aistudio/WhatsApp_Image_2026-10-30_at_6.51.15_PM__1__11ef614a.jpeg" alt="Pharmacist Consultation Counter" style="width: 100%; height: 220px; object-fit: cover;"/>
+            <div style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.35rem;">Pharmacist Consultation</h3>
+              <p style="font-size: 0.85rem; color: var(--muted); margin:0;">
+                Personalized dosage counseling, generic alternative comparisons, and drug allergy safety checks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <main class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Info Panel -->
+          <div class="contact-info-panel">
+            <div>
+              <span class="section-tag">Get in Touch</span>
+              <h2 style="font-size: 1.85rem; color: var(--dark); margin-bottom: 0.75rem;">Store Information & Inquiries</h2>
+              <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.6;">
+                Have a question about a medicine stock, prescription refill, or need advice on home health devices? Reach out directly to our pharmacy desk.
+              </p>
+            </div>
+
+            <!-- Address Card -->
+            <div class="info-card">
+              <div class="info-icon">📍</div>
+              <div class="info-details">
+                <h4>Store Location</h4>
+                <p>
+                  <strong>Khalsa Medicos (Leeford Pharmacy)</strong><br />
+                  Main Market Pharmacy Complex, Near Civil Hospital Road<br />
+                  Punjab - 141001, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Telephone / Mobile Card -->
+            <div class="info-card">
+              <div class="info-icon">📞</div>
+              <div class="info-details">
+                <h4>Phone & WhatsApp Helpline</h4>
+                <p>
+                  Primary Mobile: <a href="tel:9888102937" style="color: var(--primary); font-weight: 700;">+91 98881 02937</a><br />
+                  Support / Orders: <a href="tel:7837540540" style="color: var(--primary); font-weight: 600;">+91 7837-540-540</a>
+                </p>
+                <p style="font-size: 0.8rem; color: var(--muted); margin-top: 4px;">
+                  💬 WhatsApp your prescription photo for instant price and stock confirmation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Operating Hours Card -->
+            <div class="info-card" id="hours">
+              <div class="info-icon">⏰</div>
+              <div class="info-details">
+                <h4>Opening Hours</h4>
+                <p>
+                  <strong>Monday – Saturday:</strong> 8:00 AM – 10:30 PM<br />
+                  <strong>Sunday:</strong> 9:00 AM – 10:00 PM<br />
+                  <span style="color: var(--success); font-weight: 600;">Open all 7 days for urgent pharmaceutical needs</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Emergency Chemist Notice -->
+            <div style="background: var(--primary-tint); border: 1px solid var(--primary-border); border-radius: var(--radius-md); padding: 1.25rem;">
+              <h5 style="color: var(--primary-dark); font-size: 0.95rem; margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.4rem;">
+                <span>🚑</span> Emergency Medicine Dispatch
+              </h5>
+              <p style="font-size: 0.85rem; color: var(--body-text); margin: 0;">
+                For urgent nocturnal requests or critical insulin/inhaler needs outside normal hours, send an SMS or WhatsApp to <strong>+91 98881 02937</strong> with the patient requirement.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.4rem; color: var(--dark); margin-bottom: 0.35rem;">Send an Inquiry or Prescription Request</h3>
+            <p style="font-size: 0.875rem; color: var(--muted); margin-bottom: 1.75rem;">
+              Fill out this form and our registered pharmacist will respond with medicine availability and instructions.
+            </p>
+
+            <div id="contactSuccessBox" style="display: none; background: #dcfce7; border: 1px solid var(--primary-border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1.5rem;"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Jaswinder Singh" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactPhone" class="form-label">Mobile Number *</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="10-digit mobile number" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address (Optional)</label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com" />
+                </div>
+                <div class="form-group">
+                  <label for="contactQueryType" class="form-label">Inquiry Nature</label>
+                  <select id="contactQueryType" class="form-control" style="background:#fff; cursor: pointer;">
+                    <option value="Medicine Stock Availability">Medicine Stock Availability</option>
+                    <option value="Prescription Refill Order">Prescription Refill Order</option>
+                    <option value="Healthcare Device Inquiries">Healthcare Device Inquiries (BP / Sugar)</option>
+                    <option value="Cold Storage / Insulin Requirement">Cold Storage / Insulin Requirement</option>
+                    <option value="General Health Question">General Health Question</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Medicine Names / Message *</label>
+                <textarea 
+                  id="contactMessage" 
+                  rows="4" 
+                  class="form-control" 
+                  placeholder="Enter required medicines, dosages, quantities, or specific medical inquiries..."
+                  style="resize: vertical;"
+                  required
+                ></textarea>
+              </div>
+
+              <div style="background: var(--light-bg); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.5rem; font-size: 0.8rem; color: var(--muted);">
+                🔒 Privacy Assured: Patient inquiries are handled directly by registered pharmacists with strict medical confidentiality.
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Submit Inquiry to Pharmacist</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="map-container">
+          <div style="padding: 1rem 1.5rem; background: #ffffff; border-bottom: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <div>
+              <strong style="color: var(--dark); font-size: 1rem;">Khalsa Medicos Location Map</strong>
+              <span style="font-size: 0.825rem; color: var(--muted); margin-left: 0.5rem;">• Easy accessibility with roadside parking</span>
+            </div>
+            <a 
+              href="https://maps.google.com/?q=Khalsa+Medicos+Punjab" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-secondary btn-sm"
+              style="font-size: 0.8rem;"
+            >
+              Open in Google Maps ↗
+            </a>
+          </div>
+          <!-- Clean Google Maps Embed -->
+          <iframe 
+            class="map-frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.1965819777!2d75.7872709!3d30.900965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ecf124!2sPunjab%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Khalsa Medicos Pharmacy Location Map"
+          ></iframe>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Cart Drawer Slide-Over Container -->
+    <div class="cart-drawer-backdrop" id="cartDrawerBackdrop">
+      <div class="cart-drawer">
+        <div class="cart-drawer-header">
+          <div class="cart-drawer-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+              <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+            <span>Shopping Cart</span>
+          </div>
+          <button class="cart-close-btn" onclick="closeCartDrawer()" aria-label="Close cart">✕</button>
+        </div>
+
+        <div class="cart-items-list" id="cartDrawerItems">
+          <!-- Populated by cart.js -->
+        </div>
+
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+          <!-- Populated by cart.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Checkout Order Confirmation Modal -->
+    <div class="modal-backdrop" id="checkoutModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeCheckoutModal()">✕</button>
+        <div id="checkoutModalBody"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="brand-logo" style="margin-bottom: 1rem;">
+              <div class="logo-icon-box" style="width: 38px; height: 38px;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 6v12M6 12h12"/>
+                </svg>
+              </div>
+              <span class="brand-title" style="color: #ffffff; font-size: 1.25rem;">Khalsa Medicos</span>
+            </div>
+            <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+              Dedicated community healthcare partner delivering verified medicinal products and diagnostic equipment.
+            </p>
+            <div class="cloud-badge">
+              <span>☁️ Cloud Computing College Project</span>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="products.html">Product Catalog</a></li>
+              <li><a href="contact.html">Store Information</a></li>
+              <li><a href="login.html">Demo Login Portal</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Store & Contact</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+              <strong>Khalsa Medicos (ਖ਼ਾਲਸਾ ਮੈਡੀਕੋਜ਼)</strong><br />
+              Main Market Pharmacy Complex<br />
+              Punjab, India
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+              <strong>Helpline:</strong> <a href="tel:9888102937" style="color: var(--primary-light);">+91 98881-02937</a>
+            </p>
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+              <strong>Hours:</strong> Mon - Sun (8:00 AM - 10:30 PM)
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Academic Project Info</h4>
+            <p style="font-size: 0.85rem; color: #94a3b8; line-height: 1.5;">
+              College Project: Cloud Computing Web Deployment.<br />
+              Stack: Static Frontend HTML5, CSS3, Vanilla JS.<br />
+              Deployment: Netlify, GitHub Pages, Vercel, Firebase Hosting.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 Khalsa Medicos. All rights reserved.
+          </div>
+          <div>
+            Pure Static Frontend • Zero Server Dependencies
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Global Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Khalsa Medicos - Trusted Healthcare Partner",
+  "description": "Professional, modern, and fully responsive medical store web application for Khalsa Medicos. Featuring store photo gallery, health products catalog, search and filters, client-side cart, demo login, and Cloud Computing deployment docs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
