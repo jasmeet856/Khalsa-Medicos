@@ -42,19 +42,21 @@ khalsa-medicos/
 ├── css/
 │   └── style.css               # Shared medical-themed stylesheet (CSS Variables, flex/grid, mobile responsive)
 │
-├── js/
-│   ├── main.js                 # Shared UI controls (Mobile drawer, toasts, sticky header, user badge)
-│   ├── products.js             # Catalog data, real photos, live search, filter pills, quick-view modal
-│   ├── cart.js                 # LocalStorage shopping cart, quantity calculations, simulated checkout
-│   ├── login.js                # Demo credential auto-filler, password toggle, form validation, session mock
-│   └── contact.js              # Inquiry form validation, mobile phone verification, ticket generator
-│
-├── public/assets/aistudio/     # Authentic store photographs (Storefront, counter, racks, cold storage)
-│   ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM_e7895910.jpeg      (Main storefront & Leeford sign)
-│   ├── WhatsApp_Image_2026-10-30_at_6.51.16_PM_e2e293ed.jpeg      (Interior racks & refrigerator)
-│   ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM__1__11ef614a.jpeg  (Pharmacist desk & window)
-│   ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM__2__ec6419a7.jpeg  (Customer service counter)
-│   └── WhatsApp_Image_2026-10-30_at_6.51.16_PM__1__11455c1a.jpeg  (Personal care product wall)
+├── public/
+│   ├── js/
+│   │   ├── main.js             # Shared UI controls (Mobile drawer, toasts, sticky header, user badge)
+│   │   ├── products.js         # Catalog data, real photos, live search, filter pills, quick-view modal
+│   │   ├── cart.js             # LocalStorage shopping cart, quantity calculations, simulated checkout
+│   │   ├── login.js            # Demo credential auto-filler, password toggle, form validation, session mock
+│   │   └── contact.js          # Inquiry form validation, mobile phone verification, ticket generator
+│   ├── css/
+│   │   └── style.css           # Medical-themed stylesheet (Vite copies directly to dist/css/)
+│   └── assets/aistudio/        # Authentic store photographs (Storefront, counter, racks, cold storage)
+│       ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM_e7895910.jpeg      (Main storefront & Leeford sign)
+│       ├── WhatsApp_Image_2026-10-30_at_6.51.16_PM_e2e293ed.jpeg      (Interior racks & refrigerator)
+│       ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM__1__11ef614a.jpeg  (Pharmacist desk & window)
+│       ├── WhatsApp_Image_2026-10-30_at_6.51.15_PM__2__ec6419a7.jpeg  (Customer service counter)
+│       └── WhatsApp_Image_2026-10-30_at_6.51.16_PM__1__11455c1a.jpeg  (Personal care product wall)
 │
 ├── metadata.json               # Applet metadata
 ├── package.json                # Project dependencies and build scripts
