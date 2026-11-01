@@ -205,7 +205,7 @@ const PRODUCTS_DATA = [
     originalPrice: 68,
     rating: 4.9,
     reviews: 420,
-    image: 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?w=600&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&auto=format&fit=crop&q=80',
     requiresPrescription: false,
     description: 'Essential Vitamin B-Complex with Vitamin C and Zinc. Treats mouth ulcers, restores vitality, and replenishes micronutrient deficiencies.'
   },
